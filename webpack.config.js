@@ -1,5 +1,5 @@
 module.exports = {
-    entry: '/public/index.html',
+    entry: './src/index.tsx',
     output: {
         filename: 'bundle.js',
         path: __dirname + '/dist'
@@ -11,9 +11,10 @@ module.exports = {
                 use: ['style-loader', 'css-loader'],
             },
             {
-                test: /\.html$/,
-                use: 'html-loader',
-            }
+                test: /\.(ts|tsx)$/,
+                use: 'ts-loader',
+                exclude: /node_modules/,
+            },
         ],
     },
     devServer: {
