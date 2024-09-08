@@ -2,6 +2,41 @@ import '../css/projects.css';
 import chess from '../assets/ranci-chess.png';
 import todo from '../assets/todo.png';
 
+const projectTiles = document.querySelector('.project-tiles');
+const tiles = document.querySelectorAll('.project-tiles .div');
+
+let scrollAmount = 0;
+
+function autoScroll() {
+    scrollAmount += 1;
+    if (projectTiles) {
+        projectTiles.scrollLeft = scrollAmount;
+
+        if (scrollAmount >= projectTiles.scrollWidth - projectTiles.clientWidth) {
+            scrollAmount = 0;
+        }
+    }
+    highlightActiveTile();
+}
+
+function highlightActiveTile() {
+    if (projectTiles) {
+        const center = projectTiles.scrollLeft + projectTiles?.clientWidth / 2
+
+        tiles.forEach(tile => {
+            const tileCenter = (tile as HTMLElement).offsetLeft + tile.clientWidth / 2;
+
+            if (Math.abs(center - tileCenter) < tile.clientWidth / 2) {
+                tile.classList.add('active');
+            } else {
+                tile.classList.remove('active');
+            }
+        });
+    }
+}
+
+setInterval(autoScroll, 20);
+
 const Projects: React.FC = () => {
     return (
         <div id="projects">
