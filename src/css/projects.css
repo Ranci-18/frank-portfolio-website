@@ -30,6 +30,8 @@
 .project-tile {
     width: 150px;
     height: auto;
+    position: relative;
+    top: 20px;
 }
 
 .div.active .project-tile {

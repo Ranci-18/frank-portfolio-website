@@ -3,8 +3,9 @@
     text-align: center;
     background-color: #222;
     position: relative;
-    top: -40px;
-    color: #fff;
+    top: 100px;
+    color: #ddd;
+    height: 100vh;
 }
 
 #professional img {
@@ -13,16 +14,14 @@
 }
 
 #professional .cert {
-    width: 400px;
-    height: 350px;
-    margin-top: -10px;
+    width: 200px;
+    height: 200px; 
     border-radius: 40px;
 }
 
 #professional .badge {
-    margin-top: -10px;
-    width: 400px;
-    height: 350px;
+    width: 200px;
+    height: 200px;
 }
 
 #professional .tech {
