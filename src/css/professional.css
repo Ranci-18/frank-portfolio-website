@@ -1,7 +1,10 @@
 /* tech section */
 #professional {
     text-align: center;
-    background-color: #be3144;
+    background-color: #222;
+    position: relative;
+    top: -40px;
+    color: #fff;
 }
 
 #professional img {

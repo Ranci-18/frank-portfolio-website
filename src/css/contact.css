@@ -5,6 +5,8 @@
     color: black;
     padding: 20px;
     opacity: 0.9;
+    position: relative;
+    top: -40px;
 }
 
 #contact a:hover {
