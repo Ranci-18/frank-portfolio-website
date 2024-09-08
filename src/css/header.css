@@ -12,10 +12,12 @@ header {
 #navbar ul li a {
     margin: 0 10px;
     text-decoration: none;
-    color: #fff;
+    color: #ddd;
 }
 
 #navbar ul li a:hover {
-    background-color: #222;
-    height: 100%;
+    color: #008C76;
+    text-decoration: underline;
+    scale: 1.1;
+    transition: 0.5s;
 }
