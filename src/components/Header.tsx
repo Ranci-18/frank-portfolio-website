@@ -1,4 +1,5 @@
 import '../css/header.css';
+import { Link } from 'react-router-dom';
 
 const Header: React.FC = () => {
     return (
@@ -6,12 +7,12 @@ const Header: React.FC = () => {
             <header>
                 <nav id="navbar">
                     <ul>
-                    <li><a href="#welcome-section">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#projects">Personal Projects</a></li>
-                    <li><a href="#professional">Expertise</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                        <li><Link to="/home">Home</Link></li>
+                        <li><Link to="/about">About</Link></li>
+                        <li><Link to="/projects">Personal Projects</Link></li>
+                        <li><Link to="/expertise">Expertise</Link></li>
+                        <li><Link to="/skills">Skills</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
                     </ul>
                 </nav>
             </header>
