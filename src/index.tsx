@@ -7,6 +7,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Projects from './components/Projects';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Proffesional from './components/Proffesional';
 
 const App: React.FC = () => {
     return (
@@ -17,6 +18,8 @@ const App: React.FC = () => {
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
                     <Route path="/projects" element={<Projects />} />
+                    <Route path="/expertise" element={<Proffesional />} />
+
 
                     
                 </Routes>
