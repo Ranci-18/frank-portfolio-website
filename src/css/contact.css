@@ -1,15 +1,15 @@
 /* contact section */
 #contact {
-    background-color: #222;
+    background: #45567d;
     text-align: center;
-    color: #fff;
+    color: black;
     padding: 20px;
     opacity: 0.9;
+}
 
-    a img:hover {
-        border: 1px;
-        border: #be3144;
-        transition: 0.5s ease;
-    }
+#contact a:hover {
+    border: 1px;
+    border: #be3144;
+    transition: 0.5s ease;
 }
 
