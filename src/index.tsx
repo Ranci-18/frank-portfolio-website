@@ -2,22 +2,21 @@ import './styles.css';
 import React from 'react';
 import { createRoot } from 'react-dom/client';
 import Header from './components/Header';
-import Welcome from './components/Welcome';
-import Projects from './components/Projects';
 import Footer from './components/Footer';
-import Contact from './components/Contact';
-import Proffesional from './components/Proffesional';
+import Home from './components/Home';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 const App: React.FC = () => {
     return (
         <BrowserRouter>
-            <Header />
-            <Welcome />
-            <Projects />
-            <Proffesional />
-            <Contact />
+            <div id='app'>
+                <Header />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    
+                </Routes>
             <Footer />
+            </div>
         </BrowserRouter>
     );
 }

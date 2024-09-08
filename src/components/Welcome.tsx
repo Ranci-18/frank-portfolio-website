@@ -1,4 +1,3 @@
-import react from 'react';
 
 const Welcome: React.FC = () => {
     return (
