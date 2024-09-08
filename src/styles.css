@@ -130,22 +130,6 @@ header {
 }
 
 
-
-/* contact section */
-#contact {
-    background-color: #222;
-    text-align: center;
-    color: #fff;
-    padding: 20px;
-    opacity: 0.9;
-}
-
-#contact a img:hover {
-    transform: scale(1.3);
-    background-color: #fff;
-    transition: 0.5s ease;
-}
-
 /* footer */
 footer {
     text-align: center;

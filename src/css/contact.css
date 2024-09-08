@@ -1,0 +1,15 @@
+/* contact section */
+#contact {
+    background-color: #222;
+    text-align: center;
+    color: #fff;
+    padding: 20px;
+    opacity: 0.9;
+
+    a img:hover {
+        border: 1px;
+        border: #be3144;
+        transition: 0.5s ease;
+    }
+}
+
