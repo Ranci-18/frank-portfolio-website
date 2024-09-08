@@ -7,6 +7,10 @@
     opacity: 0.9;
     position: relative;
     top: -40px;
+
+    height: 400px;
+    clip-path: polygon(0 15%, 100% 0, 100% 0%, 100% 100%, 0 100%);
+    z-index: 1;
 }
 
 #contact a:hover {

@@ -7,17 +7,18 @@ import Projects from './components/Projects';
 import Footer from './components/Footer';
 import Contact from './components/Contact';
 import Proffesional from './components/Proffesional';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
 
 const App: React.FC = () => {
     return (
-        <>
+        <BrowserRouter>
             <Header />
             <Welcome />
             <Projects />
             <Proffesional />
             <Contact />
             <Footer />
-        </>
+        </BrowserRouter>
     );
 }
 

@@ -1,0 +1,22 @@
+/* header */
+header {
+    position: fixed;
+    background-color: #be3144;
+    width: 100%;
+}
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+}
+
+#navbar ul li a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: #fff;
+}
+
+#navbar ul li a:hover {
+    background-color: #222;
+    height: 100%;
+}

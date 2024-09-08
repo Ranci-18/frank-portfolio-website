@@ -1,4 +1,4 @@
-import react from 'react';
+import '../css/header.css';
 
 const Header: React.FC = () => {
     return (
