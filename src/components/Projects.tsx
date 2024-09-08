@@ -45,7 +45,7 @@ const Projects: React.FC = () => {
             }
         }
 
-        const intervalId = setInterval(autoScroll, 50);
+        const intervalId = setInterval(autoScroll, 60);
 
         return () => {
             clearInterval(intervalId);}

@@ -8,6 +8,8 @@ import About from './components/About';
 import Projects from './components/Projects';
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Proffesional from './components/Proffesional';
+import Skills from './components/Skills';
+import Contact from './components/Contact';
 
 const App: React.FC = () => {
     return (
@@ -19,8 +21,8 @@ const App: React.FC = () => {
                     <Route path="/about" element={<About />} />
                     <Route path="/projects" element={<Projects />} />
                     <Route path="/expertise" element={<Proffesional />} />
-
-
+                    <Route path="/skills" element={<Skills />} />
+                    <Route path="/contact" element={<Contact />} />
                     
                 </Routes>
                 <Footer />

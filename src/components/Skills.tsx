@@ -8,6 +8,12 @@ import github from '../assets/github.png';
 import firebase from '../assets/firebase.png';
 import webpack from '../assets/webpack.png';
 import sass from '../assets/sass.png';
+import cyber from '../assets/cybersecurity.png';
+import python from '../assets/python.png';
+import express from '../assets/express.png';
+import linux from '../assets/linux.png';
+import sql from '../assets/sql.png';
+import '../css/skills.css';
 
 const Skills: React.FC = () => {
     return (
@@ -54,6 +60,26 @@ const Skills: React.FC = () => {
                 <div className="skill">
                     <img src={ts} alt="typescript" />
                     <p>Typescript</p>
+                </div>
+                <div className="skill">
+                    <img src={linux} alt="linux" />
+                    <p>Linux</p>
+                </div>
+                <div className="skill">
+                    <img src={express} alt="express" />
+                    <p>Expres JS</p>
+                </div>
+                <div className="skill">
+                    <img src={python} alt="python" />
+                    <p>Python</p>
+                </div>
+                <div className="skill">
+                    <img src={cyber} alt="cyber" />
+                    <p>Cybersecurity</p>
+                </div>
+                <div className="skill">
+                    <img src={sql} alt="sql" />
+                    <p>SQL</p>
                 </div>
             </div>
         </div>
